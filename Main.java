@@ -8,6 +8,9 @@ public class Main {
         conta.subSaldo(300.00);
         
         FaturaCliente fatura = new FaturaCliente(201, cliente, 499.90);
-        System.out.println(fatura.getValorComDesconto()); // 424.91
+        
+        System.out.println("Cliente: " + cliente.getNome());
+        System.out.printf("Saldo: R$%.2f%n", conta.getSaldo());
+        System.out.printf("O valor da fatura é: R$%.2f%n", fatura.getValorComDesconto());
     }
 }
